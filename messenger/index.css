@@ -1,0 +1,94 @@
+/******************************************************************************
+ *  SiteBar 3 - The Bookmark Server for Personal and Team Use.                *
+ *  Copyright (C) 2005  Ondrej Brablc <http://brablc.com/mailto?o>            *
+ *                                                                            *
+ *  This program is free software; you can redistribute it and/or modify      *
+ *  it under the terms of the GNU General Public License as published by      *
+ *  the Free Software Foundation; either version 2 of the License, or         *
+ *  (at your option) any later version.                                       *
+ *                                                                            *
+ *  This program is distributed in the hope that it will be useful,           *
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of            *
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             *
+ *  GNU General Public License for more details.                              *
+ *                                                                            *
+ *  You should have received a copy of the GNU General Public License         *
+ *  along with this program; if not, write to the Free Software               *
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA *
+ ******************************************************************************/
+
+div.folders
+{
+  margin-bottom: 5px;
+  font-size: larger;
+  float: left;
+}
+
+div.buttons
+{
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+
+div.buttons input
+{
+  font-size: x-small;
+}
+
+div.message
+{
+  margin-bottom: 5px;
+}
+
+table
+{
+  width: 100%;
+  border: outset gray 2px;
+}
+
+td.cmnMenuItem
+{
+  width: 100px;
+  font-size: x-small;
+  text-align: left;
+}
+
+td.highlight
+{
+  font-weight: bold;
+}
+
+td
+{
+  font-size: x-small;
+  text-align: left;
+}
+
+td.icon
+{
+  width: 20px;
+  font-size: x-small;
+}
+
+td.check
+{
+  width: 20px;
+  font-size: x-small;
+}
+
+td.message
+{
+  border: 1px inset gray;
+  background: white;
+}
+
+td>pre
+{
+  font-size: medium;
+}
+
+a.states
+{
+    color: black;
+}

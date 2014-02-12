@@ -1,0 +1,50 @@
+1) ENSURE RIGHT POSITION OF THE PLUGIN
+
+This file should be in the plugins/LDAP subdirectory
+relative to your sitebar location.
+
+
+2) CHANGE AUTHENTICATION METHOD
+
+Login as primary administrator and go to "SiteBar Settings".
+Change the "Authentication Method" to "LDAP" and submit the
+form. In case you see "No LDAP support!" see point 3
+otherwise skip point 4.
+
+3) ADD LDAP SUPPORT FOR PHP
+
+Open your php.ini file and enable the extension (by
+uncommenting the extension line):
+
+Windows:
+
+    - edit C:\Windows\php.ini and enable following line:
+
+extension=php_ldap.dll
+
+    - restart Web server:
+
+net stop apache2
+net start apache2
+
+Linux:
+
+    - edit /etc/php.ini and enable following line:
+
+extension=ldap.so
+
+    - restart Web server:
+
+/usr/sbin/rcapache2 restart
+
+4) CONFIGURE LDAP PARAMETERS
+
+After successful switch to LDAP authentication method a configuration
+form appears with default values:
+
+LDAP Server
+    ldap.example.tld
+LDAP Mail Filter
+    (&(mail=%s)(objectClass=posixAccount))
+LDAP User Tree
+    ou=People,dc=example,dc=tld
